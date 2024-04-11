@@ -1,0 +1,45 @@
+.header {
+    display: flex; /* Flexbox를 사용하여 요소를 가로로 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+.logo {
+    margin-right: 10px; /* 이미지와 텍스트 사이의 간격을 조절 */
+}
+
+h1 {
+    font-size: 2.5em; /* 헤딩의 크기를 조정 */
+}
+
+.new_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d2bb9e; /* 초록 배경 */
+    color: white; /* 흰색 텍스트 */
+    font-weight: bold; /* 굵은 텍스트 */
+    text-decoration: none; /* 링크에 밑줄 제거 */
+    border-radius: 5px; /* 버튼 둥글게 만들기 */
+    border: none; /* 테두리 제거 */
+    margin: 10px;
+}
+
+.new_btn:hover {
+    background-color: #9f8b73; /* 마우스 호버 시 색상 변경 */
+}
+.post{
+    border: 3px solid #d2bb9e;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+span{
+    align-content: center;
+}
+.pagination {
+    text-align: center; /* 가운데 정렬 */
+}
+
+.pagination a,
+.pagination span {
+    margin: 0 5px; /* 각 링크와 숫자 사이의 간격 조정 */
+}
