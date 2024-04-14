@@ -36,8 +36,8 @@ span{
     align-content: center;
 }
 .pagination {
-    text-align: center; /* 가운데 정렬 */
-    
+    text-align: center; /* 가운데 정렬임*/
+
 }
 
 .pagination a,
