@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'blog/css/profile.css'%}">
+{% endblock extrahead %}
+{% block content %}
+<h1>프로필 상세</h1>
+<h3>Username: {{ user.username }}</h3>
+    {% if user.profile.image %}
+    <img src="{{ user.profile.image.url }}" alt="Profile image" />
+    {% endif %}
+    <p><span>Nickname:</span> {{ user.profile.nickname }}</p>
+    <p><span>Email:</span> {{ user.email }}</p>
+<a href="{% url 'home' %}">홈</a>
+<a href="{% url 'profile_detail' user.id%}">수정하기</a>
+{% endblock %}
