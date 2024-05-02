@@ -1,5 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
+
+#User 확장
+class User(AbstractUser):
+    phone = models.CharField(max_length=13, default="010-0000-0000", null=True)
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)

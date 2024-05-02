@@ -13,6 +13,7 @@ def signup(request):
                 username = request.POST['username'],
                 password=request.POST['password1'],
                 email=request.POST['email'],
+                phone = request.POST['phone']
             )
 
             profile = Profile(

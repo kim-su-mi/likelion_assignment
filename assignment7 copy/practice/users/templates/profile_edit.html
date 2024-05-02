@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'blog/css/profile.css'%}">
+{% endblock extrahead %}
+{% block content %}
+<h1>프로필 편집</h1>
+<form method="POST" action="{% url 'profile_edit' user.id %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    이름: <input type="text" name="username" value="{{user_info.username}}" /><br>
+    이메일: <input type="text" name="email" value="{{user_info.email}}" /><br>
+    <input type="submit" value="수정하기" />
+</form>
+{% endblock %}s
